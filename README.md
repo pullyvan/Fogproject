@@ -69,8 +69,8 @@ Finally you can enjoy the fog project server from the fog webpage. (default user
 ## Create an image
 First of all you need to create a placeholder for your image, go to image and select create an image
 Set it up with your need
-
+```
 ![Fog create an image screen](img/fog_image_created.png)
 
-````
+
 
