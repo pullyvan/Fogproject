@@ -14,7 +14,7 @@
 
 For the installation I recommend the use of debian based OS, for the example I will use Ubuntu 22.04
 
-````
+```
 # make sure to update
 sudo apt update
 # Download the project
@@ -24,12 +24,10 @@ tar -xvf 1.5.10.tar.gz
 # go to bin
 cd fogproject-1.5.10/bin
 ./installfog.sh
-``` 
-Be aware that fog use a dhcp service
-
-
 ```
-  Starting Debian based Installation
+Be aware that fog use a dhcp service
+``` 
+Starting Debian based Installation
 
    ######################################################################
    #     FOG now has everything it needs for this setup, but please     #
@@ -50,7 +48,9 @@ Be aware that fog use a dhcp service
  * Here are the settings FOG will use:
  * Base Linux: Debian
  * Detected Linux Distribution: Ubuntu
- ### To chose the interface please be aware that it will has a DHCP server so maybe do not put on production interface
+ 
+ ## To chose the interface please be aware that it will has a DHCP server so maybe do not put on production interface
+ 
  * Interface: eno1
  * Server IP Address: 192.168.83.4
  * Server Subnet Mask: 255.255.255.0
@@ -65,10 +65,11 @@ Be aware that fog use a dhcp service
 Then let Fog install all the necessary package after it finish it will asked you to log in from the webpage in this example (192.168.83.4). Saved your database with command it will show from the fog webpage.
 
 Finally you can enjoy the fog project server from the fog webpage. (default user : fog)(default password: password)
-
+```
 ## Create an image
 First of all you need to create a placeholder for your image, go to image and select create an image
 Set it up with your need
+
 ![Fog create an image screen](img/fog_image_created.png)
 
 ````
