@@ -70,10 +70,10 @@ Then let Fog install all the necessary package after it finish it will asked you
 
 Finally you can enjoy the fog project server from the fog webpage. (default user : fog)(default password: password)
 ## Create an image
-```
+
 First of all you need to create a placeholder for your image, go to image and select create an image
 Set it up with your need
-```
+
 ![Fog create an image screen](img/fog_image_created.png)
 
 ## Register a Host (pxe client)
@@ -93,7 +93,9 @@ Go to the pc that you wanted make an image of it (capture) or just want to regis
 ![Fog full registration basic answer](img/fog_registration_pxe_basic_answer.png)
 
 ## Capture an image
+
 ### From web interface
+
 From the web interface you can go on host and select the host you want then click on capture icon(orange)
 ![Fog web interface capture]()
 
