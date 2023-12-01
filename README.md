@@ -32,6 +32,8 @@
 ## Preparation
 **Please be aware that fog use a dhcp service which will conflict if there is same service from Windows Server or elsewhere from the same subnet**
 
+In this tutorial you may need to have a little of linux knowledge
+
 First of all you need to configure your network interface and set a static ip, here is an example for Ubuntu using netplan
 
 In case you public network can have a dhcp server feel free to not set up a local network interface
