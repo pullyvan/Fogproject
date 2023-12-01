@@ -97,13 +97,10 @@ Go to the pc that you wanted make an image of it (capture) or just want to regis
 * boot from PXE (efi or legacy depending the OS you installed if efi you may have to enable efi pxe from BIOS)
 * after fog pxe client is launched from pxe you can perform full registration
 * Put the DNS name you want your machine OS to have in the hostname
-```
+
 ![Fog full registration 01](img/fog_registration_pxe_01.png)
-```
 * select the image you need
-```
 ![Fog full registration select the image](img/fog_registration_pxe_image_selection.png)
-```
 **DO NOT DEPLOY YET IF WANT TO CAPTURE OR IT WILL ERASE YOUR HARD DRIVE**
 ![Fog full registration basic answer](img/fog_registration_pxe_basic_answer.png)
 
