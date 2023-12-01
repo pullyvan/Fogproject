@@ -138,4 +138,4 @@ From the web interface select the host and click deploy which will clone the ima
 
 * boot in PXE
 * select deploy image
-![Fog PXE interface to deploy](img/fog_registration_pxe_01.png)
+![Fog PXE interface to deploy](img/fog_pxe_interface_deploy.png)
