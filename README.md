@@ -49,8 +49,9 @@ network:
      gateway4: 192.168.83.1
      nameservers:
        addresses: [8.8.8.8,8.8.4.4]
-    #Optional if can use your dhcp on a public network
-    
+
+
+#Optional if can use your dhcp on a public network    
 # intern network which will be use for fog (local network) in this example
       
     eth2: addresses:
