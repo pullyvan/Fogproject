@@ -20,6 +20,7 @@
 ## Dependicies 
 * git
 * openssh-server (usefull to manage through ssh)
+* vim (optional)
 
 ## Service installed by fog
 
@@ -28,6 +29,35 @@
 * PXE
 * TFTP
 * NFS
+## Preparation
+**Please be aware that fog use a dhcp service which will conflict if there is same service from Windows Server or elsewhere from the same subnet**
+
+First of all you need to configure your network interface and set a static ip, here is an example for Ubuntu using netplan
+
+In case you public network can have a dhcp server feel free to not set up a local network interface
+
+```
+vim /etc/netplan/01-network-manager-all.yaml
+
+---
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth1:	#eth1 is the interface name you can check by doing "ip a"
+     addresses: [192.168.83.35/24]
+     gateway4: 192.168.83.1
+     nameservers:
+       addresses: [8.8.8.8,8.8.4.4]
+    #Optional if can use your dhcp on a public network
+    
+# intern network which will be use for fog (local network) in this example
+      
+    eth2: addresses:
+      - 192.168.10.35/24
+     
+```
+
 
 ## Installation
 
@@ -70,18 +100,18 @@ Starting Debian based Installation
  
  ## To chose the interface please be aware that it will has a DHCP server so maybe do not put on production interface
  
- * Interface: eno1
- * Server IP Address: 192.168.83.4
+ * Interface: eth2
+ * Server IP Address: 192.168.10.35
  * Server Subnet Mask: 255.255.255.0
  * Hostname: adminimt-HP-Z230-Tower-Workstation
  * Installation Type: Normal Server
  * Internationalization: No
  * Image Storage Location: /images
  * Using FOG DHCP: Yes
- * DHCP router Address: 192.168.83.1
+ * DHCP router Address: 192.168.10.1
  * Send OS Name, OS Version, and FOG Version: Yes
 ```
-Then let Fog install all the necessary package after it finish it will asked you to log in from the webpage in this example (192.168.83.4). Saved your database with command it will show from the fog webpage.
+Then let Fog install all the necessary package after it finish it will asked you to log in from the webpage in this example (192.168.10.35) or (192.168.83.35 if you use public network). Saved your database with command it will show from the fog webpage.
 
 Finally you can enjoy the fog project server from the fog webpage. (default user : fog)(default password: password)
 ## Create an image
