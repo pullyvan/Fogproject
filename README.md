@@ -4,14 +4,14 @@
 
 ## Table of content
 
-[Dependicies](#dependicies)
-[Service installed by fog](#service-installed-by-fog)
-[Installation](#installation)
-[Create an image](#create-an-image)
-[Register a Host (pxe client)](#register-a-host-pxe-client)
-[Deploy the image to a computer](#deploy-the-image-to-a-computer)
-[Capture an image from a fog client](#capture-an-image)
-[Deploy the image you have created and capture it](#deploy-the-image-to-a-computer)
+* [Dependicies](#dependicies)
+* [Service installed by fog](#service-installed-by-fog)
+* [Installation](#installation)
+* [Create an image](#create-an-image)
+* [Register a Host (pxe client)](#register-a-host-pxe-client)
+* [Deploy the image to a computer](#deploy-the-image-to-a-computer)
+* [Capture an image from a fog client](#capture-an-image)
+* [Deploy the image you have created and capture it](#deploy-the-image-to-a-computer)
 
 
 
