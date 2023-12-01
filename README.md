@@ -31,7 +31,7 @@
 
 ## Installation
 
-For the installation I recommend the use of debian based OS, for the example I will use Ubuntu 22.04
+For the installation I recommend the use of debian based OS, for the example I will use Ubuntu 22.04. You have to go on [download](https://fogproject.org/download) from their website and get the link from github
 
 ```
 # make sure to update
