@@ -13,18 +13,16 @@
 * [Capture an image from a fog client](#capture-an-image)
 * [Deploy the image you have created and capture it](#deploy-the-image-to-a-computer)
 
-
-
-
-
 ## Dependicies 
 * git
 * openssh-server (usefull to manage through ssh)
 * vim (optional)
-
+```
+apt install -y git openssh-server vim 
+```
 ## Service installed by fog
 
-* DHCP server from fog or other
+* DHCP server from fog or other (windows server for example)
 * apache (web server)
 * PXE
 * TFTP
@@ -117,14 +115,17 @@ Starting Debian based Installation
 Then let Fog install all the necessary package after it finish it will asked you to log in from the webpage in this example (192.168.10.35) or (192.168.83.35 if you use public network). Saved your database with command it will show from the fog webpage.
 
 Finally you can enjoy the fog project server from the fog webpage. (default user : fog)(default password: password)
-## Create an image
+
+## Fog usage
+
+### Create an image
 
 First of all you need to create a placeholder for your image, go to image and select create an image
 Set it up with your need
 
 ![Fog create an image screen](img/fog_image_created.png)
 
-## Register a Host (pxe client)
+### Register a Host (pxe client)
 Go to the pc that you wanted make an image of it (capture) or just want to register for other purposes
 
 * boot from PXE (efi or legacy depending the OS you installed if efi you may have to enable efi pxe from BIOS)
@@ -141,21 +142,21 @@ Go to the pc that you wanted make an image of it (capture) or just want to regis
 
 ![Fog full registration basic answer](img/fog_registration_pxe_basic_answer.png)
 
-## Capture an image
+### Capture an image
 
-### From web interface
+#### From web interface
 
 From the web interface you can go on host and select the host you want then click on capture **(orange icon)**
 ![Fog web interface capture](img/fog_web_interface_host.png)
 
-### From PXE
+#### From PXE
 
 Boot into pxe and let it capture it 
 
 
-## Deploy the image to a computer
+### Deploy the image to a computer
 
-### From PXE
+#### From PXE
 
 * Boot in pxe
 * register the computer
@@ -163,11 +164,11 @@ Boot into pxe and let it capture it
 
 If you forget to deploy after the registration you can do it from the web interface or the pxe client
 
-### Deploy from web interface
+#### Deploy from web interface
 
 From the web interface select the host and click deploy which will clone the image you captured **(green icon)** into that computer (you need to register the deploy machine beforehand in pxe)
 ![Fog web interface to deploy](img/fog_web_interface_host.png)
-### Deploy from pxe
+#### Deploy from pxe
 
 * boot in PXE
 * select deploy image
