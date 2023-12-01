@@ -133,7 +133,7 @@ If you forget to deploy after the registration you can do it from the web interf
 ### Deploy from web interface
 
 From the web interface select the host and click deploy which will clone the image you captured **(green icon)** into that computer (you need to register the deploy machine beforehand in pxe)
-![Fog web interface to deploy](img/fog_registration_pxe_01.png)
+![Fog web interface to deploy](img/fog_web_interface_host.png)
 ### Deploy from pxe
 
 * boot in PXE
