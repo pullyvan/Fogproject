@@ -5,7 +5,7 @@
 
 ## Table of content
 
-* [Dependicies](#dependicies)
+* [Dependencies](#dependencies)
 * [Service installed by fog](#service-installed-by-fog)
 * [Installation](#installation)
 * [Create an image](#create-an-image)
@@ -14,10 +14,10 @@
 * [Capture an image from a fog client](#capture-an-image)
 * [Deploy the image you have created and capture it](#deploy-the-image-to-a-computer)
 
-## Dependicies 
+## Dependencies 
 * git
 * openssh-server (usefull to manage through ssh)
-* vim (optional)
+* vim (optional)(use for editing from terminal the alternative can be nano)
 
 Here is an example of how to install package in Debian based OS (ubuntu,xubuntu, etc...)
 ```
@@ -41,7 +41,9 @@ In case your public network can have a dhcp server feel free to not set up a loc
 
 ```
 vim /etc/netplan/01-network-manager-all.yaml
-
+				OR
+(if you have not installed vim)
+nano /etc/netplan/01-network-manager-all.yaml 
 ---
 network:
   version: 2
@@ -115,7 +117,7 @@ Starting Debian based Installation
  * DHCP router Address: 192.168.10.1
  * Send OS Name, OS Version, and FOG Version: Yes
 ```
-Then let Fog install all the necessary package after it finish jit will asked you to log in from the webpage in this example (192.168.10.35) or (192.168.83.35 if you use public network). Saved your database with command it will show from the fog webpage.
+Then let Fog install all the necessary package after it finish it will asked you to log in from the webpage in this example (192.168.10.35) or (192.168.83.35 if you use public network). Saved your database with command it will show from the fog webpage.
 
 Finally you can enjoy the fog project server from the fog webpage. (default user : fog)(default password: password)
 
