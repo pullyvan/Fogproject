@@ -1,6 +1,7 @@
 # Fogproject
 
-[Fog project](https://fogproject.org/) is open source project mean to deploy and capture image via partclone and pxe. There are many tools that can also be used depending what you're expecting have a look on their website [Fog project](https://fogproject.org/) 
+[Fog project](https://fogproject.org/) is an open source project mean to deploy and capture image with partclone and pxe. There are many tools that can also be used depending what you're expecting have a look on their website [Fog project](https://fogproject.org/) 
+
 
 ## Table of content
 
@@ -17,6 +18,8 @@
 * git
 * openssh-server (usefull to manage through ssh)
 * vim (optional)
+
+Here is an example of how to install package in Debian based OS (ubuntu,xubuntu, etc...)
 ```
 apt install -y git openssh-server vim 
 ```
@@ -34,7 +37,7 @@ In this tutorial you may need to have a little of linux knowledge
 
 First of all you need to configure your network interface and set a static ip, here is an example for Ubuntu using netplan
 
-In case you public network can have a dhcp server feel free to not set up a local network interface
+In case your public network can have a dhcp server feel free to not set up a local network interface
 
 ```
 vim /etc/netplan/01-network-manager-all.yaml
@@ -62,7 +65,7 @@ network:
 
 ## Installation
 
-For the installation I recommend the use of debian based OS, for the example I will use Ubuntu 22.04. You have to go on [download](https://fogproject.org/download) from their website and get the link from github
+For the installation I recommend to use a debian based OS. For this example I will use Ubuntu 22.04. You have to go on [download](https://fogproject.org/download) from their website and get the download link from github
 
 ```
 # make sure to update
@@ -104,7 +107,7 @@ Starting Debian based Installation
  * Interface: eth2
  * Server IP Address: 192.168.10.35
  * Server Subnet Mask: 255.255.255.0
- * Hostname: adminimt-HP-Z230-Tower-Workstation
+ * Hostname: HP-Z230-Tower-Workstation
  * Installation Type: Normal Server
  * Internationalization: No
  * Image Storage Location: /images
@@ -112,7 +115,7 @@ Starting Debian based Installation
  * DHCP router Address: 192.168.10.1
  * Send OS Name, OS Version, and FOG Version: Yes
 ```
-Then let Fog install all the necessary package after it finish it will asked you to log in from the webpage in this example (192.168.10.35) or (192.168.83.35 if you use public network). Saved your database with command it will show from the fog webpage.
+Then let Fog install all the necessary package after it finish jit will asked you to log in from the webpage in this example (192.168.10.35) or (192.168.83.35 if you use public network). Saved your database with command it will show from the fog webpage.
 
 Finally you can enjoy the fog project server from the fog webpage. (default user : fog)(default password: password)
 
@@ -120,16 +123,16 @@ Finally you can enjoy the fog project server from the fog webpage. (default user
 
 ### Create an image
 
-First of all you need to create a placeholder for your image, go to image and select create an image
+First of all you need to go on the webpage (192.168.83.35) to create a placeholder for your image, go to image and select create an image
 Set it up with your need
 
 ![Fog create an image screen](img/fog_image_created.png)
 
 ### Register a Host (pxe client)
-Go to the pc that you wanted make an image of it (capture) or just want to register for other purposes
+Still on the webpage, go to the pc that you wanted make an image of (capture) or just want to register for other purposes
 
-* boot from PXE (efi or legacy depending the OS you installed if efi you may have to enable efi pxe from BIOS)
-* after fog pxe client is launched from pxe you can perform full registration
+* Boot from PXE (efi or legacy depending the OS you installed if efi you may have to enable efi pxe from BIOS)
+* After fog pxe client is launched from pxe you can perform full registration
 * Put the DNS name you want your machine OS to have in the hostname
 
 ![Fog full registration 01](img/fog_registration_pxe_01.png)
@@ -138,25 +141,25 @@ Go to the pc that you wanted make an image of it (capture) or just want to regis
 
 ![Fog full registration select the image](img/fog_registration_pxe_image_selection.png)
 
-**DO NOT DEPLOY YET IF WANT TO CAPTURE OR ELSEIT WILL ERASE YOUR HARD DRIVE**
+**DO NOT DEPLOY YET IF WANT TO CAPTURE OR ELSE IT WILL ERASE YOUR HARD DRIVE**
 
 ![Fog full registration basic answer](img/fog_registration_pxe_basic_answer.png)
 
 ### Capture an image
 
-#### From web interface
+#### * From web interface
 
 From the web interface you can go on host and select the host you want then click on capture **(orange icon)**
 ![Fog web interface capture](img/fog_web_interface_host.png)
 
-#### From PXE
+#### * From PXE
 
 Boot into pxe and let it capture it 
 
 
 ### Deploy the image to a computer
 
-#### From PXE
+#### * From PXE
 
 * Boot in pxe
 * register the computer
@@ -164,11 +167,11 @@ Boot into pxe and let it capture it
 
 If you forget to deploy after the registration you can do it from the web interface or the pxe client
 
-#### Deploy from web interface
+#### * Deploy from web interface
 
 From the web interface select the host and click deploy which will clone the image you captured **(green icon)** into that computer (you need to register the deploy machine beforehand in pxe)
 ![Fog web interface to deploy](img/fog_web_interface_host.png)
-#### Deploy from pxe
+#### * Deploy from pxe
 
 * boot in PXE
 * select deploy image
