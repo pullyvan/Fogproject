@@ -146,7 +146,7 @@ Still on the webpage, go to the pc that you wanted make an image of (capture) or
 ![Fog full registration basic answer](img/fog_registration_pxe_basic_answer.png)
 
 ### Capture an image
-
+("*" mean to show you diffrent way to do it)
 #### * From web interface
 
 From the web interface you can go on host and select the host you want then click on capture **(orange icon)**
