@@ -51,13 +51,14 @@ Tips : If your public network already has a DHCP server, you can skip setting up
 Here's an example for Ubuntu, using netplan : 
 
 Using vim : 
-
+``` 
 * vim /etc/netplan/01-network-manager-all.yaml
 
 * Using nano (Ou autre chose si j’ai pas compris) : 
 	nano /etc/netplan/01-network-manager-all.yaml 
 
 **In this tutorial you may need to have a little of linux knowledge**
+```
 
 ```
 vim /etc/netplan/01-network-manager-all.yaml
