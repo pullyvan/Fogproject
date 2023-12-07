@@ -57,9 +57,8 @@ Using vim :
 * Using nano (Ou autre chose si j’ai pas compris) : 
 	nano /etc/netplan/01-network-manager-all.yaml 
 
-**In this tutorial you may need to have a little of linux knowledge**
 ```
-
+**In this tutorial you may need to have a little of linux knowledge**
 ```
 vim /etc/netplan/01-network-manager-all.yaml
 				OR
