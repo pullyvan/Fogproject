@@ -92,6 +92,12 @@ Installation wise, I’d recommend using a Debian-based OS.
 In this example, Ubuntu 22.04 will be used. 
 *Visit the download page on the Fog Project[Fog Project](https://fogproject.org/download) website and obtain the link from GitHub.* 
 
+*sudo* let you use administrator command
+*wget or curl* let you download from the web
+*tar -xvf* let extract compress file with *.tar*
+*cd* let you navigate between folder
+*./* let you run script or program
+*ip a* let you know your current network configuration same to ipconfig for Windows based operating system
 ```
 # make sure to update
 sudo apt update
@@ -104,7 +110,7 @@ tar -xvf 1.5.10.tar.gz
 
 # go to bin
 cd fogproject-1.5.10/bin
-./installfog.sh
+sudo ./installfog.sh
 ```
 **Note: Be aware that Fog uses a DHCP service.**
  
@@ -134,6 +140,7 @@ Starting Debian based Installation
  
  ## To chose the interface please be aware that it will has a DHCP server so maybe do not put on production interface
  
+ 
  * Interface: eth2
  * Server IP Address: 192.168.10.35
  * Server Subnet Mask: 255.255.255.0
@@ -146,9 +153,7 @@ Starting Debian based Installation
  * Send OS Name, OS Version, and FOG Version: Yes
 ```
 Then let Fog install all the necessary packages. 
-Once done, you will be prompted to log in to the webpage (in this case, 192.168.10.35, or 192.168.83.35 if you're using the public network). Please follow the insctruction from the web page
-
-Save your database with the command (shown ?) on the Fog webpage.
+Once done, you will be prompted to log in to the webpage (in this case, 192.168.10.35, or 192.168.83.35 if you're using the public network). Please follow the instruction from the web page
 
 At this point, you can now enjoy the Fog Project server from the Fog webpage. (default user: fog, default password: password).
 
