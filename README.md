@@ -44,6 +44,14 @@ With the -y specified option for automatic confirmation.
 
 **Also, in this tutorial, a basic understanding of Linux is recommended.**
 
+
+* "sudo" let you use administrator command
+* "wget or curl" let you download from the web
+* "tar -xvf" let extract compress file with *.tar*
+* "cd" let you navigate between folder
+* "./" let you run script or program
+* "ip a" let you know your current network configuration same to ipconfig for Windows based operating system
+
 To begin, configure your network interface and set a static IP. 
 
 Tips : If your public network already has a DHCP server, you can skip setting up a local network interface.
@@ -94,12 +102,6 @@ Installation wise, I’d recommend using a Debian-based OS.
 In this example, Ubuntu 22.04 will be used. 
 *Visit the download page on the [Fog Project](https://fogproject.org/download) website and obtain the link from GitHub.* 
 
-* "sudo" let you use administrator command
-* "wget or curl" let you download from the web
-* "tar -xvf" let extract compress file with *.tar*
-* "cd" let you navigate between folder
-* "./" let you run script or program
-* "ip a" let you know your current network configuration same to ipconfig for Windows based operating system
 ```
 # make sure to update
 sudo apt update
