@@ -92,7 +92,7 @@ network:
 
 Installation wise, I’d recommend using a Debian-based OS. 
 In this example, Ubuntu 22.04 will be used. 
-*Visit the download page on the Fog Project[Fog Project](https://fogproject.org/download) website and obtain the link from GitHub.* 
+*Visit the download page on the [Fog Project](https://fogproject.org/download) website and obtain the link from GitHub.* 
 
 * "sudo" let you use administrator command
 * "wget or curl" let you download from the web
