@@ -50,7 +50,7 @@ Tips : If your public network already has a DHCP server, you can skip setting up
 
 Here's an example for Ubuntu, using netplan : 
 
-Using vim : 
+Using [vim](https://www.cyberciti.biz/faq/linux-unix-vim-save-and-quit-command/), I highly suggest to read about vim before using it : 
 ``` 
 * vim /etc/netplan/01-network-manager-all.yaml
 
