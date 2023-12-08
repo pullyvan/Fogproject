@@ -54,7 +54,9 @@ Using [vim](https://www.cyberciti.biz/faq/linux-unix-vim-save-and-quit-command/)
 ``` 
 * vim /etc/netplan/01-network-manager-all.yaml
 
-* Using nano (Ou autre chose si j’ai pas compris) : 
+OR
+
+* Using nano: 
 	nano /etc/netplan/01-network-manager-all.yaml 
 
 ```
