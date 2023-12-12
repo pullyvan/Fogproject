@@ -34,7 +34,7 @@ With the -y specified option for automatic confirmation.
 
 ## Service installed by fog
 
-* DHCP server from fog or other (https://wiki.fogproject.org/wiki/index.php/Windows_DHCP_Server)[windows server for example]
+* DHCP server from fog or other windows server for example
 * apache (web server)
 * PXE
 * TFTP
